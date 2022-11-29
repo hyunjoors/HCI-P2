@@ -1,0 +1,53 @@
+{
+ "name": "race",
+ "children": [
+  {
+   "name": "African-American",
+   "children": [
+        {"name": "High", "value": 845},
+        {"name": "Low", "value": 1346},
+        {"name": "Medium", "value": 984}
+    ]
+  },
+  {
+   "name": "Asian",
+   "children": [
+        {"name": "High", "value": 3},
+        {"name": "Low", "value": 24},
+        {"name": "Medium", "value": 4}
+    ]
+  },
+  {
+   "name": "Caucasian",
+   "children": [
+        {"name": "High", "value": 223},
+        {"name": "Low", "value": 1407},
+        {"name": "Medium", "value": 473}
+    ]
+  },
+  {
+   "name": "Hispanic",
+   "children": [
+        {"name": "High", "value": 47},
+        {"name": "Low", "value": 368},
+        {"name": "Medium", "value": 94}
+    ]
+  },
+  {
+   "name": "Native American",
+   "children": [
+        {"name": "High", "value": 4},
+        {"name": "Low", "value": 3},
+        {"name": "Medium", "value": 4}
+    ]
+  },
+  {
+   "name": "Other",
+   "children": [
+        {"name": "High", "value": 22},
+        {"name": "Low", "value": 273},
+        {"name": "Medium", "value": 48}
+    ]
+  }
+ ]
+}

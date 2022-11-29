@@ -1,0 +1,39 @@
+{
+    "name": "level",
+    "children": [
+        {
+        "name": "High",
+        "children": [
+            {"name": "African-American", "value": 845},
+            {"name": "Asian", "value": 3},
+            {"name": "Caucasian", "value": 223},
+            {"name": "Hispanic", "value": 47},
+            {"name": "Native American", "value": 4},
+            {"name": "Other", "value": 22}
+        ]
+        },
+        {
+        "name": "Low",
+        "children": [
+            {"name": "African-American", "value": 1346},
+            {"name": "Asian", "value": 24},
+            {"name": "Caucasian", "value": 1407},
+            {"name": "Hispanic", "value": 368},
+            {"name": "Native American", "value": 3},
+            {"name": "Other", "value": 273}
+        ]
+        },
+        {
+        "name": "Medium",
+        "children": [
+            {"name": "African-American", "value": 984},
+            {"name": "Asian", "value": 4},
+            {"name": "Caucasian", "value": 473},
+            {"name": "Hispanic", "value": 94},
+            {"name": "Native American", "value": 4},
+            {"name": "Other", "value": 48}
+        ]
+        }
+    ]
+}
+   

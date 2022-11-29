@@ -1,0 +1,300 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    #myCarousel a.carousel-control-next {
+        right: -3%;
+    }
+    #myCarousel a.carousel-control-prev {
+        right: -3%;
+    }
+    .map {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner_slide {
+        padding: 0 80px 0 0px;
+    }
+    .transfot span {
+        font-size: 15px;
+    }
+    .transfot h3 {
+        font-size: 16px;
+    }
+    .banner_main {
+        background-size: auto 64%;
+        padding: 220px 0px 0px 0px;
+    }
+    .text-bg h1 {
+        font-size: 43px;
+        line-height: 52px;
+    }
+    .about {
+        margin-top: -340px;
+    }
+    .yelldark_colo {
+        margin: 0 30px;
+    }
+    .titlepage h2 {
+        font-size: 48px;
+    }
+    #myCarousel a.carousel-control-next {
+        right: -3%;
+    }
+    #myCarousel a.carousel-control-prev {
+        right: -3%;
+    }
+    #veh a.carousel-control-next {
+        right: 43%;
+    }
+    .map {
+        margin-right: 0px;
+    }
+    .bottom_form .enter {
+        width: 63%;
+    }
+    ul.location_icon li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-bg h1 {
+        font-size: 43px;
+        padding-bottom: 20px;
+        line-height: 44px;
+    }
+    .banner_main {
+        padding: 152px 0px 0px 0px;
+        background-color: #cacaca !important;
+        background: inherit;
+        min-height: 919px;
+    }
+    .about {
+        margin-top: 90px;
+    }
+    .transfot h3 {
+        font-size: 19px;
+    }
+    #banner1 a.carousel-control-prev {
+        top: 41%;
+    }
+    .titlepage h2 {
+        font-size: 37px;
+    }
+    .service_box {
+        width: 13.3%;
+    }
+    .service_box i {
+        width: 120px;
+        height: 120px;
+    }
+    .service_box h4 {
+        font-size: 12px;
+    }
+    #veh a.carousel-control-prev {
+        left: 43%;
+    }
+    #veh a.carousel-control-next {
+        right: 43%;
+    }
+    .choose_box h3 {
+        font-size: 20px;
+    }
+    ul.location_icon li {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .map {
+        margin-right: 0px;
+    }
+    .bottom_form .enter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .banner_slide {
+        padding: 0 80px 0 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner_main {
+        padding: 152px 0px 90px 0px;
+        background-color: #cacaca !important;
+        background: inherit;
+    }
+    .banner_slide {
+        padding: 0 80px 0 0px;
+    }
+    .text-bg {
+        max-width: inherit;
+    }
+    .transfot {
+        padding-top: 30px;
+    }
+    .about {
+        margin-top: 90px;
+    }
+    #myCarousel a.carousel-control-prev {
+        top: 34%;
+    }
+    .text-bg h1 {
+        font-size: 48px;
+        line-height: 51px;
+    }
+    #banner1 a.carousel-control-prev {
+        top: 44%;
+    }
+    #banner1 a.carousel-control-next {
+        top: 50%;
+    }
+    .service_box {
+        width: 25.0%;
+    }
+    .service_box i {
+        width: 156px;
+        height: 156px;
+    }
+    .vehicles_truck {
+        margin-bottom: 30px;
+    }
+    .blac_co {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #veh .carousel-control-prev,
+    #veh .carousel-control-next {
+        top: 105%;
+    }
+    #veh a.carousel-control-prev {
+        left: 40%;
+    }
+    #veh .carousel-control-next {
+        right: 40%;
+    }
+    .main_form {
+        max-width: inherit;
+    }
+    .co_tru {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .map {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .choose_box {
+        margin-bottom: 30px;
+    }
+    .titlepage h2 {
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        padding: 30px 0px 15px 0px;
+    }
+    .logo {
+        border: inherit;
+        float: left;
+        margin-top: 0px !important;
+    }
+    .banner_main {
+        padding: 152px 0px 90px 0px;
+        background-color: #cacaca !important;
+        background: inherit;
+    }
+    .banner_slide {
+        padding: 0 50px 0 0px;
+    }
+    .text-bg {
+        max-width: inherit;
+        margin-top: 0px;
+    }
+    .transfot {
+        padding-top: 30px;
+    }
+    .about {
+        margin-top: 90px;
+    }
+    .text-bg h1 {
+        font-size: 36px;
+        line-height: 51px;
+    }
+    #banner1 a.carousel-control-prev {
+        top: 44%;
+    }
+    #banner1 a.carousel-control-next {
+        top: 50%;
+    }
+    .titlepage h2 {
+        font-size: 27px;
+        line-height: 30px;
+    }
+    .testimonial_box h3 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .service_box {
+        width: 100%;
+    }
+    .service_main {
+        justify-content: center;
+    }
+    .service_box i {
+        margin: 0 auto;
+    }
+    .vehicles_truck {
+        margin-bottom: 30px;
+    }
+    .blac_co {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    #veh .carousel-control-prev,
+    #veh .carousel-control-next {
+        top: 105%;
+    }
+    #veh a.carousel-control-prev {
+        left: 40%;
+    }
+    #veh .carousel-control-next {
+        right: 40%;
+    }
+    .choose_box h3 {
+        font-size: 16px;
+    }
+    .main_form {
+        max-width: inherit;
+    }
+    .co_tru {
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .map {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .choose_box {
+        margin-bottom: 30px;
+    }
+    .right_bottun {
+        margin-top: -40px;
+    }
+    ul.location_icon li {
+        font-size: 18px;
+    }
+    .bottom_form .enter {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .d_none {
+        display: none;
+    }
+}
+
