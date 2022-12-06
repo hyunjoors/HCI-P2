@@ -67,18 +67,54 @@
             </div>
             <div class="row">
                <div class="col-md-12">
-                  <h3>Percent Composition of Arrests by Race</h3>
-                  <p>Discussion about recidivism</p>
+                  <h4>Percent Composition of Arrests by Race (2011-2021)</h4>
+                  <p>African Americans are disproportionately arrested</p>
+                  <p class="lead">
+                     Looking at the percentage composition of arrests by race, it is clear that Black individuals 
+                     are disproportionately arrested considering that they constitute only 13.6% of the population
+                     while making up 27% of all arrests in the last 10 years.
+                  </p>
+                  <br>
+                  <p>The role of the war on drugs</p>
+                  <p class="lead">
+                     A major contributor towards this disproportionality is the role of law enforcement in drug-related
+                     arrests and incarceration. As can be seen by filtering the percent composition of arrests to only
+                     show marijuana related crimes, it can be seen that the inbalance increases. The war on drugs has
+                     contributed to the disproportionate police enforcement on the African American community. This has
+                     then led to inbalances and disadvantages for the African American communities in terms of family well-being,
+                     stability, and employment. You can read more about this in the following 
+                     <a href="https://www.ojp.gov/ncjrs/virtual-library/abstracts/disproportionate-incarceration-african-americans-drug-offenses-us">study</a>.
+                  </p>
                   <div id="arrestRate"></div>
                   <button class="btn btn-outline-primary" onclick="renderArrestGraph('total')">For All Crimes</button>
                   <button class="btn btn-outline-primary" onclick="renderArrestGraph('marijuana-possession')">For Marijuana Possession</button>
                   <button class="btn btn-outline-primary" onclick="renderArrestGraph('marijuana-sale')">For Marijuana Sale and Manufacturing</button>
                </div>
             </div>
+            <br>
             <div class="row">
                <div class="col-md-12">
-                  <h3>Recidivism Rates by Race</h3>
-                  <p>Discussion about percent composition</p>
+                  <h4>Recidivism Rates by Race (Prisoners Released 2008)</h4>
+                  <p>Background on study</p>
+                  <p class="lead">
+                     This data comes from a report from the Department of Justice which follows up on prisoners released
+                     from prison in 2008 from 24 different states. The study was interested in recidivism specifically and
+                     did not have a specific lens on race and ethnicity. They followed these ex-convicts for ten years following
+                     their release and tracked their recidivism rates by year. You can read more
+                     <a href="https://bjs.ojp.gov/BJS_PUB/rpr24s0810yfup0818/Web%20content/508%20compliant%20PDFs">here</a>.
+                  </p>
+                  <br>
+                  <p>Analysis of data by race and ethnicity</p>
+                  <p class="lead">
+                     The findings of interest that we have drawn from the study are those which pertain to race specifically,
+                     so below you can see the recidivism rates in aggregate up to the year selected from the slider. In addition,
+                     we drew specifically the data for all, white, and black prisoners in the study. The key finding that you can 
+                     see here is that African Americans are year on year above the recidivism rates of all races in aggregate and the 
+                     gap only widens when comparing Blacks to Whites specifically. This disproportionality which exists in terms of 
+                     recidivism only further magnifies the disadvantages and imbalances which were mentioned above in terms of arrest 
+                     and incarceration.
+                  </p>
+                  <br>
                   <div id="recidivism"></div>
                   <div class="d-flex justify-content-center my-4">
                      <form class="range-field">
