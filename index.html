@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 
 
 <html lang="en">
@@ -55,7 +55,7 @@
       <!-- end intro section -->
 
       <!-- legal section -->
-      <div id="legal" class="service">
+      <div id="technology" class="service">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
@@ -66,12 +66,35 @@
                </div>
             </div>
             <div class="row">
-               <div id="stop-reasons" class="col-md-6">
+               <div class="col-md-12">
+                  <h3>Percent Composition of Arrests by Race</h3>
+                  <p>Discussion about recidivism</p>
+                  <div id="arrestRate"></div>
+                  <button class="btn btn-outline-primary" onclick="renderArrestGraph('total')">For All Crimes</button>
+                  <button class="btn btn-outline-primary" onclick="renderArrestGraph('marijuana-possession')">For Marijuana Possession</button>
+                  <button class="btn btn-outline-primary" onclick="renderArrestGraph('marijuana-sale')">For Marijuana Sale and Manufacturing</button>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <h3>Recidivism Rates by Race</h3>
+                  <p>Discussion about percent composition</p>
+                  <div id="recidivism"></div>
+                  <div class="d-flex justify-content-center my-4">
+                     <form class="range-field">
+                     <input id="yearSlider" class="border-0" type="range" min="1" max="10" value="1" onchange="updateGraph(this.value)"/>
+                     </form>
+                     <span class="font-weight-bold text-secondary ml-2 mt-1 valueSpan"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div id="pie-race" class="col-md-6">
                   <h3>Share of reasons for stop</h3>
                   <iframe width="100%" height="600" frameborder="0" src="https://observablehq.com/embed/9afc96de5b9bdf55?cells=chart"></iframe>
                </div>
-
-               <div id="stop-population" class="col-md-6">
+      
+               <div id="pie-race" class="col-md-6">
                   <h3>Share of stops and population</h3>
                   <iframe width="100%" height="320" frameborder="0"src="https://observablehq.com/embed/cf0a98b40fdc53cd?cells=chart"></iframe>
                </div>
@@ -79,7 +102,7 @@
          </div>
       </div>
       <!-- end legal section -->
-      
+            
       <!-- technology section -->
       <div id="technology" class="vehicles">
          <div class="container">
@@ -211,6 +234,7 @@
            document.getElementById("mySidepanel").style.width = "0";
          }
       </script>
+      <script src="js/app.js"></script>
 
          
 
