@@ -87,6 +87,7 @@
                      stability, and employment. You can read more about this in the following 
                      <a href="https://www.ojp.gov/ncjrs/virtual-library/abstracts/disproportionate-incarceration-african-americans-drug-offenses-us">study</a>.
                   </p>
+                  <h5>Title of the plot</h5>
                   <div id="arrestRate"></div>
                   <button class="btn btn-outline-primary" onclick="renderArrestGraph('total')">For All Crimes</button>
                   <button class="btn btn-outline-primary" onclick="renderArrestGraph('marijuana-possession')">For Marijuana Possession</button>
@@ -111,6 +112,7 @@
                      The interactive plot below uses the data with an aim to show race and ethnicity differences in the recidivism rates. The slider will allow you to aggregate up the recidivism rates to the year selected. In addition, we drew specifically the data for all, white, and black prisoners in the study. The key finding that you can see here is that African Americans are year on year above the recidivism rates of all races in aggregate and the gap only widens when comparing Blacks to Whites specifically. This disproportionality which exists in terms of recidivism only further magnifies the disadvantages and imbalances which were mentioned above in terms of arrest and incarceration.
                   </p>
                   <br>
+                  <h5>Title of the plot</h5>
                   <div id="recidivism"></div>
                   <div class="d-flex justify-content-center my-4">
                      <form class="range-field">
@@ -135,10 +137,12 @@
 
             <div class="row">
                <div id="pie-race" class="col-md-6">
+                  <h5>Title of the plot</h5>
                   <iframe width="100%" height="626" frameborder="0"src="https://observablehq.com/embed/5ffa6a55d8a26d1a?cells=viewof+order%2Cchart"></iframe>
                </div>
       
                <div id="pie-race" class="col-md-6">
+                  <h5>Title of the plot</h5>
                   <iframe width="100%" height="626" frameborder="0"src="https://observablehq.com/embed/8d522901482d8d3b?cells=viewof+order%2Cchart"></iframe>
                </div>
             </div>
@@ -151,8 +155,8 @@
                      Black residents accounted for 16 percent of stops made by all participating law enforcement agencies during 2019 but constituted only 7 percent of the state’s population.
                      Residents identified by law enforcement as Middle Eastern or South Asian were also overrepresented in stops (5%) compared to their share of the state’s population (2%).
                      White residents were represented fairly proportionally in stops (33%), compared with their population share (34%), as were Latino residents (39% and 41%, respectively). 
-                     Asian individuals were underrepresented in stops (6%) compared with their share of the population (12%), as were multiracial residents (1% and 3%, respectively).<br><br>
-
+                     Asian individuals were underrepresented in stops (6%) compared with their share of the population (12%), as were multiracial residents (1% and 3%, respectively).
+                     <br><br>
                      Individuals identified as Pacific Islanders were overrepresented (0.5% of stops, compared with 0.3% of the population), and those identified as Native American were underrepresented (0.2% and 0.3%, respectively). The percentage-point differences are small, but as a proportion of the population share, these differences are considerable. 
                      Again, the racial/ethnic identification comes solely from the officer making the stop.
                   </p>
@@ -167,6 +171,7 @@
                      The plot below displays different reasons for being stopped across different race groups. 
                   </p>
 
+                  <h5>Title of the plot</h5>
                   <iframe width="100%" height="626" frameborder="0"src="https://observablehq.com/embed/b908cbdcd060ab35?cells=viewof+layout%2Cchart"></iframe>
 
                   <p>Analysis</p>
@@ -189,7 +194,7 @@
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage">
-                     <h2>Racial Bias and Technology<br>in the Legal Systems</h2>
+                     <h2>Racial Bias and Technology<br>in the US Legal Systems</h2>
                      <p>In this section, we will discuss the racial biases introduced by technologies used in the U.S. legal systems.</p>
                   </div>
                </div>
@@ -226,35 +231,60 @@
                      In the court, judges are often presented with two sets of scores from the ML program -- Risk category (high, medium and low risk), and a corresponding decile score.
                      The following three visuals will explore the trend of predictions for each race/ethnicity group for each set of scores.
                   </p>
+               </div>             
+            </div>
+
+            <div class="row">
+               <div id="pie-race" class="col-md-6">
+                  <h5>Race-Risk Category</h5>
+                  <iframe width="100%" height=600 frameborder="0" src="https://observablehq.com/embed/f8a4815b8df280ac?cells=chart"></iframe>
+               </div>
+               <div id="pie-level" class="col-md-6">
+                  <h5>Risk Category-Race</h5>
+                  <iframe width="100%" height=600 frameborder="0" src="https://observablehq.com/embed/229711ae6f785bf9?cells=chart"></iframe>
+               </div>
+            </div>
+
+            <div class="row">
+               <div class="col-md-12">
+                  <h5>Distribution of Deciles Scores among Black and White groups</h5>
                   <iframe width="100%" height="685" frameborder="0" src="https://observablehq.com/embed/7dbed08ef155e12c?cells=viewof+layout%2Cchart"></iframe>
+               </div>             
+            </div>
+
+            <div class="row">
+               <div class="col-md-12">
                   <p>Analysis</p>
                   <p class="lead">
-                     &emsp;The score proved remarkably unreliable in forecasting violent crime: Only 20 percent of the people predicted to commit violent crimes actually went on to do so.
+                     Two pie plots provide an intrinsic comparison of risk categories between race groups.
+                     In Race-Risk Category plot, we see that African-American and Caucasian groups are the majority of defendents in the data.
+                     In Risk Category-Race plot, we notice that for those who predicted with 'low' risk of recidivism, there seems no significant difference between Black and White groups.
+                     However, as we move up the risk category, it's always African-Americans who consist more than 60% of each category.
                      <br><br>
-                     &emsp;When a full range of crimes were taken into account — including misdemeanors such as driving with an expired license — the algorithm was somewhat more accurate than a coin flip. Of those deemed likely to re-offend, 61 percent were arrested for any subsequent crimes within two years.
+                     Now let us focus on African-American and Caucasian groups only for an easier comparison.
+                     From the bar plot, we can clearly see a distinct pattern for each group. White individuals' decile scores are skewed toward lower deciles scores. Black individuals' scores are (somewhat) distributed over all scores, exaggerating the gap betwen the number of higher deciles scores between White and Black people.
+                     <br><br>
+                     The data hints us that there may be a racial disparity in the ML program that predicts individuals' future recidivism.
+                     Now, lets look at those predictions' accuracy by comparing the score with the number of crimes that the defendants actually committed over the course of two years.
                   </p>
                </div>             
             </div>
 
-            <!-- <div class="row">
-               <div id="pie-race" class="col-md-6">
-                  <h5>Race-Level</h5>
-                  <iframe width="100%" height=600 frameborder="0" src="https://observablehq.com/embed/f8a4815b8df280ac?cells=chart"></iframe>
-               </div>
-               <div id="pie-level" class="col-md-6">
-                  <h5>Level-Race</h5>
-                  <iframe width="100%" height=600 frameborder="0" src="https://observablehq.com/embed/229711ae6f785bf9?cells=chart"></iframe>
-               </div>
-            </div> -->
-
             <div class="row">
                <div class="col-md-12">
-                  <h3>Recidivism Scores</h3>
-                  <p>nternet. It uses a dictionary of over 200 Latin words, combined with .</p>
+                  <h3>Prediction Accuracy of ML on Recidivism Scores</h3>
+                  <p class="lead">
+                     In order to argue that ML predictions are being biased, we need to analyze how well the ML program predicts the recidivism within two years.<br>
+                     &emsp;- "Survived" and "Recidivated" indicate defendents' recidivism within two years after serving their sentence<br>
+                     &emsp;- "Low" and "High" indicate the predicted decile category by the ML program
+                  </p>
+                  <h5>Transformed Confusion Matrix of ML Predictions</h5>
                   <iframe width="100%" height="779.734375" frameborder="0" src="https://observablehq.com/embed/87a9da5cb68597a9?cells=viewof+N%2Cchart"></iframe>
                   <p>Analysis</p>
                   <p class="lead">
-                     Analysis XXX
+                     We want to focus on True Negatives (Recidivated-Low) and False Positives (Survived-High).
+                     For True Negative, there were 19% of White defendents and 14% of Black defendents. This may indicate that White people are predicted with low risk even though they reoffended in the future.
+                     For False Positive, there were 14% of White defendants and 22% of Black defendants. We may interpret that Black people are more unfairly predicted than the other race with high risk even though they won't.
                   </p>
                </div> 
             </div>
@@ -275,21 +305,23 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="testimonial_box">
+                     <h3>With an aim to remove human and systematic bias in our legal systems, we have adopted ML algorithms in the legal decisions. However, our analysis shows that ML has imposed a greater race disparity in the legal decisions.</h3>
+                  </div>
+                  <div class="testimonial_box">
                      <h3>
-                        As we discussed and visualized before, it is very clear that African Americans are
-                        disproportionately affected by the current legal system due to human and systematic bias.
-                        They are more likely to be arrested, incarcerated, and re-incarcerated. From the data of 4 million stops by California’s 15 largest law enforcement agencies in 2019, 
-                        we could also see notable differences between African Americans and white Californians. 
+                        Our analysis narrates a remarkably unreliable forecasting of crimes in the US courts.
+                        It is very clear that African Americans are disproportionately affected by the current legal system due to human and systematic bias.
+                        They are more likely to be arrested, incarcerated, and re-incarcerated.
+                        From the data of 4 million stops by California’s 15 largest law enforcement agencies in 2019, we could also see notable differences between African Americans and White Californians. 
                         This is a problematic cycle which has detrimental effects to the community as a whole. 
                      </h3>
                   </div>
                   <div class="testimonial_box">
-                     <h3>With an aim to remove human and systematic bias in our legal systems, we have adopted ML algorithms in the legal decisions. However, our analysis shows that ML has increased/incurred greater race disparity in legal decisions</h3>
-                  </div>
-                  <div class="testimonial_box">
-                     <h3>If computers could accurately predict which defendants were likely to commit new crimes, the criminal justice system could be fairer and more selective about who is incarcerated and for how long. The trick, of course, is to make sure the computer gets it right. If it’s wrong in one direction, a dangerous criminal could go free. If it’s wrong in another direction, it could result in someone unfairly receiving a harsher sentence or waiting longer for parole than is appropriate.</h3>
-                     <p>- The formula was particularly likely to falsely flag black defendants as future criminals, wrongly labeling them this way at almost twice the rate as white defendants.</p>
-                     <p>- White defendants were mislabeled as low risk more often than black defendants.</p>
+                     <h3>
+                        Thus, if our criminal justice system desires to be fairer and accurate in deciding who is incarcerated and for how long, we must continously audit the ML decisions to make sure information from the computer is righteous. If not, we are releasing dangerous criminals into the society while mistreat those who will truly rehabilitate.
+                     </h3>
+
+                     
                   </div>
                </div>
             </div>
@@ -307,10 +339,10 @@
                   </div>
                   <ul>
                      <li><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">[1] https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a></li>
-                     <li><a href="https://www.aclu.org/news/privacy-technology/how-is-face-recognition-surveillance-technology-racist">https://www.aclu.org/news/privacy-technology/how-is-face-recognition-surveillance-technology-racist</a></li>
-                     <li><a href="https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/arrest">https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/arrest</a></li>
-                     <li><a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">https://www.census.gov/quickfacts/fact/table/US/PST045221</a></li>
-                     <li><a href="https://www.ppic.org/publication/racial-disparities-in-law-enforcement-stops/">https://www.ppic.org/publication/racial-disparities-in-law-enforcement-stops/</a></li>
+                     <li><a href="https://www.aclu.org/news/privacy-technology/how-is-face-recognition-surveillance-technology-racist">[2] https://www.aclu.org/news/privacy-technology/how-is-face-recognition-surveillance-technology-racist</a></li>
+                     <li><a href="https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/arrest">[3] https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/arrest</a></li>
+                     <li><a href="https://www.census.gov/quickfacts/fact/table/US/PST045221">[4] https://www.census.gov/quickfacts/fact/table/US/PST045221</a></li>
+                     <li><a href="https://www.ppic.org/publication/racial-disparities-in-law-enforcement-stops/">[5] https://www.ppic.org/publication/racial-disparities-in-law-enforcement-stops/</a></li>
                   </ul>
                </div>
             </div>
