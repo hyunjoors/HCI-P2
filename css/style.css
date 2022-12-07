@@ -169,11 +169,11 @@ img {
 }
 
 .lead {
-     font-size: 18px;
+     font-size: 22px;
      line-height: 30px;
-     color: #767676;
+     color: #111111;
      margin: 0;
-     padding: 0;
+     padding: 10px;
 }
 
 .form-control:focus {
@@ -608,7 +608,7 @@ ul.conat_info li a:hover {
 
 .vehicles {
      background-color: #fff;
-     padding: 70px 0 155px 0;
+     padding: 70px 0 40px 0;
 }
 
 .vehicles .titlepage {
@@ -621,7 +621,7 @@ ul.conat_info li a:hover {
      padding-top: 15px;
      text-align: center;
      margin: 0 50px;
-     font-size: 20px;
+     font-size: 24px;
      font-weight: 400;
 }
 
